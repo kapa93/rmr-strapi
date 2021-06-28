@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reviews",
+  "info": {
+    "name": "review",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "comment": {
+      "type": "string",
+      "required": true
+    },
+    "rating": {
+      "type": "decimal"
+    },
+    "recruiter": {
+      "via": "reviews",
+      "model": "recruiter"
+    },
+    "review_author": {
+      "via": "reviews",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

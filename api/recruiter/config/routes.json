@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/recruiters",
+      "handler": "recruiter.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/recruiters/count",
+      "handler": "recruiter.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/recruiters/:id",
+      "handler": "recruiter.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/recruiters",
+      "handler": "recruiter.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/recruiters/:id",
+      "handler": "recruiter.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/recruiters/:id",
+      "handler": "recruiter.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
